@@ -86,6 +86,10 @@ app.get('/html',function(req,res){
   res.sendFile(path.join(__dirname,'welcome.html'));
 });
 
+app.get('/image',function(req,res){
+  res.sendFile(path.join(__dirname,'Hasura_Image.webp'));
+});
+
 app.get('/input',function(req,res){
   res.sendFile(path.join(__dirname,'inputs.html'));
 });
