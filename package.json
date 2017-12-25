@@ -1,0 +1,25 @@
+{
+  "name": "hpdf",
+  "version": "1.0.0",
+  "description": "hpdf week 1",
+  "main": "inputs.js",
+  "dependencies": {
+    "body-parser": "^1.18.2",
+    "crypto": "^1.0.1",
+    "express-session": "^1.15.5",
+    "morgan": "^1.8.2",
+    "pg": "^7.3.0"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://sonu12485@bitbucket.org/sonu12485/hpdf.git"
+  },
+  "author": "sonu12485",
+  "license": "ISC",
+  "homepage": "https://bitbucket.org/sonu12485/hpdf#readme"
+}

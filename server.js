@@ -72,10 +72,17 @@ app.get('/setcookie',function(req,res){
 });
 
 app.get('/getcookie',function(req,res){
-  var name = req.session.auth.name.toString();
-  var age = req.session.auth.age.toString();
-  var disp = "Name- " + name + "<br>" + "Age-" + age;
-  res.send(disp);
+  if(req.session && req.session.auth && req.session.auth.name && req.session.auth.age)
+  {
+    var name = req.session.auth.name.toString();
+    var age = req.session.auth.age.toString();
+    var disp = "Name- " + name + "<br>" + "Age-" + age;
+    res.send(disp);
+  }
+  else
+  {
+    res.send("cookie has not been set go to /setcookie to set the cookie");
+  }
 });
 
 app.get('/robots.txt',function(req,res){
